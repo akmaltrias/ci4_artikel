@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* CSS RESET */ 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+    --primary: #4CAF50;
+    --fwhite: #ffffff; 
+    --fblack: #212529;
+    --fred: #AE4F4C;
+    --fyellow: #f6ae2d;
+}
+
+
+body{
+   font-family: 'Quicksand', sans-serif;
+   background-color: #f2f2f2;
+   color: var(--fblack);
+}
+
+.card.card-login{
+  background-color: var(--fwhite);
+  font-size: 12pt;
+  border-radius: 2rem;
+}
+
+.card.card-artikel{
+  cursor: pointer;
+  transition: 0.4s;
+  margin-top: 1rem;
+}
+
+.card.card.card-artikel:hover {
+  transform: scale(0.97, 0.97);
+}
+
+.title-auth{
+  font-weight: bolder;
+}
+
+.btn{
+    float: right;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: 11pt;
+    color: var(--fwhite);
+  }
+  
+.btn.btn-artikel{
+  background-color: var(--primary);
+}
+
+.btn.btn-hapus{
+  background-color: var(--fred) ;
+}
+
+.btn.btn-ubah{
+  background-color: var(--fyellow);
+}
+
+.btn:hover{
+  color: var(--fblack);
+}
+
+.main{
+    margin: 1rem;
+}
+
+.navbar-brand{
+    color: var(--primary);
+    font-weight: 900;
+    pointer-events: none;
+}
+
+.nav-link{
+    color: var(--fblack);
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-left: 0.75rem;
+}
+
+.nav-link.register{
+    background-color: var(--primary);
+    color: var(--fwhite);
+    border-radius: 0.5rem;
+}
+
+.nav-link.register:hover{
+    color: var(--fblack);
+}
+
+.nav-link:hover{
+    color: var(--primary);
+}
+
+.card-title.judul-artikel{
+  font-weight: bolder;
+  font-size: 26pt;
+  color: var(--primary);
+}
+
+.card-text.penulis-artikel{
+  color: #909090;
+  font-style: italic;
+}
+
+.welcome-banner{
+  font-size: 14pt;
+  font-weight: bolder;
+}
+
+#nama-user{
+  background-color: #4caf50b9;
+  padding: 3px;
+  font-weight: 900;
+  border-radius: 2px;
+}
+
+.card-text.isi-artikel{
+  text-align: justify;
+  color: var(--fblack);
+  font-size: 13pt;
+  line-height: 20pt;
+  text-indent: 30px;
+}
+
+.hidden{
+  display: none;
+}
